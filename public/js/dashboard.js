@@ -1,0 +1,1 @@
+fetch('/api/auth/me').then(r=>r.json()).then(d=>{const u=d.user;if(!u)return location.href='/login.html';document.getElementById('user').textContent='Signed in as '+u.username+' ('+u.role+')'});document.getElementById('logout').onclick=async()=>{await fetch('/api/auth/logout',{method:'POST'});location.href='/'};
