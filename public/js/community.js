@@ -1,0 +1,1 @@
+// Community page behavior is handled by community-form.js.
