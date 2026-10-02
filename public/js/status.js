@@ -1,0 +1,1 @@
+fetch('/api/health').then(r=>r.json()).then(d=>document.getElementById('status').textContent=JSON.stringify(d,null,2)).catch(()=>document.getElementById('status').textContent='Unable to reach the API.');
