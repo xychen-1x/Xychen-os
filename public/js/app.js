@@ -1,0 +1,1 @@
+document.querySelectorAll('a[href]').forEach(a=>{if(a.getAttribute('href')==='#')a.addEventListener('click',e=>e.preventDefault())});
